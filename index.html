@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList - Simple Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TodoList</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#app">Try Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>จัดการงานของคุณให้ง่ายขึ้น</h1>
+        <p>แอปจัดการงานที่เรียบง่าย แต่มีประสิทธิภาพ ไม่ต้องสมัครสมาชิก ใช้ได้ทันที</p>
+        <a href="#app" class="btn-primary">เริ่มใช้งาน</a>
+    </section>
+
+    <section id="features" class="features">
+        <h2>ฟีเจอร์</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">+</div>
+                <h3>เพิ่มง่าย</h3>
+                <p>พิมพ์แล้วกด Enter ก็เพิ่มงานได้เลย</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✓</div>
+                <h3>เสร็จแล้ว</h3>
+                <p>คลิกเพื่อทำเครื่องหมายว่าเสร็จแล้ว</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">×</div>
+                <h3>ลบออก</h3>
+                <p>ลบงานที่ไม่ต้องการออกได้ทันที</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="app" class="app-section">
+        <div class="todo-container">
+            <h2>รายการงานของฉัน</h2>
+            <div class="input-group">
+                <input type="text" id="todo-input" placeholder="พิมพ์งานที่ต้องทำ..." autocomplete="off">
+                <button id="add-btn">เพิ่ม</button>
+            </div>
+            <ul id="todo-list"></ul>
+            <div class="stats">
+                <span id="count">0 รายการ</span>
+                <button id="clear-btn">ล้างทั้งหมด</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TodoList. Built with HTML/CSS/JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
